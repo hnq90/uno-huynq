@@ -27,9 +27,20 @@ $(document).ready(function() {
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn');
   });
 
-  $('.navigation-wrapper .blog-button').click(function() {
-    $('.navigation-wrapper').toggleClass('visible');
-    $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn');
-  });
+	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	var disqus_shortname = 'huynqsblog'; // required: replace example with your forum shortname
+
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function () {
+	var s = document.createElement('script'); s.async = true;
+	s.type = 'text/javascript';
+	s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+	(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	}());
+
+//  $('.navigation-wrapper .blog-button').click(function() {
+//    $('.navigation-wrapper').toggleClass('visible');
+//    $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn');
+//  });
 
 });
